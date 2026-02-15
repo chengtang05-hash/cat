@@ -5,11 +5,20 @@
 并托管前端静态文件。
 """
 
+import sys
+import pathlib
+import os
+
+# 允许直接运行此脚本
+if __name__ == "__main__":
+    # 将项目根目录加入 sys.path
+    project_root = pathlib.Path(__file__).parent.parent
+    sys.path.append(str(project_root))
+
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 from pydantic import BaseModel
-import pathlib
 
 from app.engine import DiagnosisEngine
 
@@ -75,3 +84,10 @@ async def diagnose(request: DiagnoseRequest):
         "results": [r.to_dict() for r in results],
         "disclaimer": "⚠️ 本系统仅供参考，不能替代专业兽医诊断。如猫咪症状严重，请立即就医！",
     }
+
+
+if __name__ == "__main__":
+    import uvicorn
+    print("🐱 猫咪诊断系统服务端启动中...")
+    print("请在浏览器访问: http://127.0.0.1:8000")
+    uvicorn.run(app, host="127.0.0.1", port=8000)

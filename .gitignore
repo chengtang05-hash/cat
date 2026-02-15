@@ -1,4 +1,4 @@
-# Python-generated files
+# Python 生成文件
 __pycache__/
 *.py[oc]
 build/
@@ -6,5 +6,17 @@ dist/
 wheels/
 *.egg-info
 
-# Virtual environments
+# 虚拟环境
 .venv
+
+# 测试缓存
+.pytest_cache/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Agent 配置（不上传到生产环境）
+.agent/
