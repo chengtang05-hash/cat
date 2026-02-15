@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐱 猫咪健康诊断 - 智能猫病诊断与治疗系统</title>
+    <meta name="description" content="根据猫的症状体征智能诊断可能的疾病，并提供药物治疗和饮食调养方案">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- 背景装饰 -->
+    <div class="bg-decoration">
+        <div class="bg-orb bg-orb-1"></div>
+        <div class="bg-orb bg-orb-2"></div>
+        <div class="bg-orb bg-orb-3"></div>
+    </div>
+
+    <div class="container">
+        <!-- 头部 -->
+        <header class="header">
+            <div class="logo">
+                <span class="logo-icon">🐱</span>
+                <div>
+                    <h1>猫咪健康诊断</h1>
+                    <p class="subtitle">智能症状分析 · 精准疾病匹配 · 专业治疗方案</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- 步骤指引 -->
+        <div class="steps">
+            <div class="step active" id="step-1">
+                <div class="step-number">1</div>
+                <div class="step-text">选择症状</div>
+            </div>
+            <div class="step-line"></div>
+            <div class="step" id="step-2">
+                <div class="step-number">2</div>
+                <div class="step-text">智能诊断</div>
+            </div>
+            <div class="step-line"></div>
+            <div class="step" id="step-3">
+                <div class="step-number">3</div>
+                <div class="step-text">查看方案</div>
+            </div>
+        </div>
+
+        <!-- 症状选择区 -->
+        <section class="section" id="symptoms-section">
+            <div class="section-header">
+                <h2>📋 请选择猫咪的症状</h2>
+                <div class="search-box">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="symptom-search" placeholder="搜索症状..." autocomplete="off">
+                </div>
+            </div>
+
+            <div class="selected-summary" id="selected-summary" style="display:none;">
+                <span class="selected-count">已选 <strong id="selected-count">0</strong> 个症状</span>
+                <button class="btn-clear" id="btn-clear" onclick="clearSymptoms()">清除全部</button>
+            </div>
+
+            <div id="symptoms-container" class="symptoms-container">
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p>正在加载症状数据...</p>
+                </div>
+            </div>
+
+            <!-- 附加信息 -->
+            <div class="extra-info">
+                <div class="info-field">
+                    <label for="cat-age">猫咪年龄段</label>
+                    <select id="cat-age">
+                        <option value="">可选</option>
+                        <option value="kitten">幼猫 (< 1岁)</option>
+                        <option value="young">青年猫 (1-3岁)</option>
+                        <option value="adult">成年猫 (3-7岁)</option>
+                        <option value="senior">老年猫 (7-10岁)</option>
+                        <option value="geriatric">高龄猫 (>10岁)</option>
+                    </select>
+                </div>
+                <div class="info-field">
+                    <label for="cat-weight">体重 (kg)</label>
+                    <input type="number" id="cat-weight" placeholder="例: 4.5" min="0.5" max="15" step="0.1">
+                </div>
+            </div>
+
+            <button class="btn-diagnose" id="btn-diagnose" onclick="runDiagnosis()" disabled>
+                <span class="btn-icon">🩺</span>
+                <span>开始诊断</span>
+            </button>
+        </section>
+
+        <!-- 诊断结果区 -->
+        <section class="section results-section" id="results-section" style="display:none;">
+            <div class="section-header">
+                <h2>🔬 诊断结果</h2>
+                <button class="btn-back" onclick="backToSymptoms()">← 重新选择</button>
+            </div>
+
+            <div class="disclaimer">
+                ⚠️ 本系统仅供参考，不能替代专业兽医诊断。如猫咪症状严重，请立即就医！
+            </div>
+
+            <div id="results-container"></div>
+        </section>
+
+        <!-- 页脚 -->
+        <footer class="footer">
+            <p>🐾 猫咪健康诊断系统 v1.0 · 仅供参考，请以专业兽医诊断为准</p>
+        </footer>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,336 @@
+{
+    "categories": [
+        {
+            "id": "general",
+            "name": "全身/一般症状",
+            "icon": "🌡️",
+            "symptoms": [
+                {
+                    "id": "fever",
+                    "name": "发烧/体温升高"
+                },
+                {
+                    "id": "lethargy",
+                    "name": "精神萎靡/嗜睡"
+                },
+                {
+                    "id": "weight_loss",
+                    "name": "体重下降"
+                },
+                {
+                    "id": "weight_gain",
+                    "name": "体重增加"
+                },
+                {
+                    "id": "appetite_loss",
+                    "name": "食欲下降/不吃东西"
+                },
+                {
+                    "id": "appetite_increase",
+                    "name": "食欲异常增加"
+                },
+                {
+                    "id": "dehydration",
+                    "name": "脱水"
+                },
+                {
+                    "id": "weakness",
+                    "name": "虚弱无力"
+                },
+                {
+                    "id": "hiding",
+                    "name": "躲藏/不愿出来"
+                },
+                {
+                    "id": "excessive_thirst",
+                    "name": "饮水量异常增多"
+                }
+            ]
+        },
+        {
+            "id": "respiratory",
+            "name": "呼吸系统",
+            "icon": "🫁",
+            "symptoms": [
+                {
+                    "id": "sneezing",
+                    "name": "打喷嚏"
+                },
+                {
+                    "id": "coughing",
+                    "name": "咳嗽"
+                },
+                {
+                    "id": "nasal_discharge",
+                    "name": "流鼻涕"
+                },
+                {
+                    "id": "breathing_difficulty",
+                    "name": "呼吸困难/急促"
+                },
+                {
+                    "id": "wheezing",
+                    "name": "喘鸣/呼吸有杂音"
+                },
+                {
+                    "id": "open_mouth_breathing",
+                    "name": "张口呼吸"
+                },
+                {
+                    "id": "nasal_congestion",
+                    "name": "鼻塞"
+                }
+            ]
+        },
+        {
+            "id": "digestive",
+            "name": "消化系统",
+            "icon": "🍽️",
+            "symptoms": [
+                {
+                    "id": "vomiting",
+                    "name": "呕吐"
+                },
+                {
+                    "id": "diarrhea",
+                    "name": "腹泻"
+                },
+                {
+                    "id": "constipation",
+                    "name": "便秘"
+                },
+                {
+                    "id": "bloody_stool",
+                    "name": "便血"
+                },
+                {
+                    "id": "bloating",
+                    "name": "腹部胀大/膨胀"
+                },
+                {
+                    "id": "drooling",
+                    "name": "流口水"
+                },
+                {
+                    "id": "bad_breath",
+                    "name": "口臭"
+                },
+                {
+                    "id": "hairball_vomiting",
+                    "name": "吐毛球"
+                },
+                {
+                    "id": "eating_grass",
+                    "name": "频繁吃草"
+                },
+                {
+                    "id": "abdominal_pain",
+                    "name": "腹部触摸疼痛"
+                }
+            ]
+        },
+        {
+            "id": "urinary",
+            "name": "泌尿系统",
+            "icon": "💧",
+            "symptoms": [
+                {
+                    "id": "frequent_urination",
+                    "name": "频繁排尿"
+                },
+                {
+                    "id": "blood_in_urine",
+                    "name": "血尿"
+                },
+                {
+                    "id": "straining_to_urinate",
+                    "name": "排尿困难/用力排尿"
+                },
+                {
+                    "id": "urinating_outside_box",
+                    "name": "在猫砂盆外排尿"
+                },
+                {
+                    "id": "crying_when_urinating",
+                    "name": "排尿时叫唤/疼痛"
+                },
+                {
+                    "id": "no_urination",
+                    "name": "完全无法排尿"
+                },
+                {
+                    "id": "increased_urination",
+                    "name": "尿量明显增多"
+                }
+            ]
+        },
+        {
+            "id": "skin_coat",
+            "name": "皮肤/毛发",
+            "icon": "🐾",
+            "symptoms": [
+                {
+                    "id": "hair_loss",
+                    "name": "脱毛/毛发脱落"
+                },
+                {
+                    "id": "excessive_scratching",
+                    "name": "过度抓挠"
+                },
+                {
+                    "id": "skin_redness",
+                    "name": "皮肤发红"
+                },
+                {
+                    "id": "skin_lesions",
+                    "name": "皮肤结痂/溃疡"
+                },
+                {
+                    "id": "dandruff",
+                    "name": "大量皮屑"
+                },
+                {
+                    "id": "ring_shaped_lesion",
+                    "name": "环形脱毛斑"
+                },
+                {
+                    "id": "excessive_grooming",
+                    "name": "过度舔毛"
+                },
+                {
+                    "id": "dull_coat",
+                    "name": "毛发暗淡无光"
+                },
+                {
+                    "id": "lumps_bumps",
+                    "name": "皮肤肿块"
+                },
+                {
+                    "id": "flea_dirt",
+                    "name": "发现跳蚤或跳蚤粪便"
+                }
+            ]
+        },
+        {
+            "id": "eyes_ears",
+            "name": "眼睛/耳朵",
+            "icon": "👁️",
+            "symptoms": [
+                {
+                    "id": "eye_discharge",
+                    "name": "眼分泌物增多"
+                },
+                {
+                    "id": "eye_redness",
+                    "name": "眼睛发红/充血"
+                },
+                {
+                    "id": "squinting",
+                    "name": "眯眼/怕光"
+                },
+                {
+                    "id": "third_eyelid_visible",
+                    "name": "第三眼睑外露"
+                },
+                {
+                    "id": "ear_scratching",
+                    "name": "频繁抓耳"
+                },
+                {
+                    "id": "ear_discharge",
+                    "name": "耳朵分泌物/异味"
+                },
+                {
+                    "id": "head_shaking",
+                    "name": "频繁甩头"
+                },
+                {
+                    "id": "head_tilt",
+                    "name": "头部歪斜"
+                },
+                {
+                    "id": "swollen_eyes",
+                    "name": "眼睛肿胀"
+                },
+                {
+                    "id": "cloudy_eyes",
+                    "name": "眼睛混浊"
+                }
+            ]
+        },
+        {
+            "id": "musculoskeletal",
+            "name": "运动/行为",
+            "icon": "🦴",
+            "symptoms": [
+                {
+                    "id": "limping",
+                    "name": "跛行/走路异常"
+                },
+                {
+                    "id": "stiffness",
+                    "name": "动作僵硬"
+                },
+                {
+                    "id": "reluctance_to_jump",
+                    "name": "不愿跳跃"
+                },
+                {
+                    "id": "aggression",
+                    "name": "攻击性增强"
+                },
+                {
+                    "id": "restlessness",
+                    "name": "烦躁不安"
+                },
+                {
+                    "id": "excessive_vocalization",
+                    "name": "异常频繁叫唤"
+                },
+                {
+                    "id": "seizures",
+                    "name": "抽搐/癫痫"
+                },
+                {
+                    "id": "loss_of_balance",
+                    "name": "失去平衡/共济失调"
+                },
+                {
+                    "id": "paralysis",
+                    "name": "瘫痪/后肢无力"
+                }
+            ]
+        },
+        {
+            "id": "oral",
+            "name": "口腔",
+            "icon": "😸",
+            "symptoms": [
+                {
+                    "id": "gum_redness",
+                    "name": "牙龈红肿"
+                },
+                {
+                    "id": "gum_bleeding",
+                    "name": "牙龈出血"
+                },
+                {
+                    "id": "difficulty_eating",
+                    "name": "进食困难/掉食物"
+                },
+                {
+                    "id": "pawing_at_mouth",
+                    "name": "用爪子抓嘴"
+                },
+                {
+                    "id": "tooth_discoloration",
+                    "name": "牙齿变色/牙结石"
+                },
+                {
+                    "id": "oral_ulcers",
+                    "name": "口腔溃疡"
+                }
+            ]
+        }
+    ]
+}

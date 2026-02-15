@@ -1,0 +1,1139 @@
+[
+  {
+    "id": "uri",
+    "name": "猫上呼吸道感染",
+    "category": "respiratory",
+    "severity": "中度",
+    "description": "由猫疱疹病毒或猫杯状病毒引起的上呼吸道感染，类似人类感冒。",
+    "symptoms": {
+      "sneezing": 9,
+      "nasal_discharge": 8,
+      "eye_discharge": 7,
+      "fever": 6,
+      "lethargy": 5,
+      "appetite_loss": 5,
+      "coughing": 4,
+      "nasal_congestion": 7,
+      "eye_redness": 5
+    },
+    "treatment": {
+      "medications": [
+        {
+          "name": "赖氨酸补充剂",
+          "dosage": "每日250-500mg，拌入食物",
+          "notes": "抑制疱疹病毒复制"
+        },
+        {
+          "name": "阿莫西林克拉维酸钾",
+          "dosage": "遵医嘱，12.5mg/kg，每日2次",
+          "notes": "防治继发细菌感染，需兽医处方"
+        },
+        {
+          "name": "生理盐水滴鼻",
+          "dosage": "每侧鼻孔1-2滴，每日3次",
+          "notes": "缓解鼻塞"
+        }
+      ],
+      "diet": {
+        "recommended": [
+          "温热的湿粮（加热释放香气）",
+          "高蛋白易消化食物",
+          "鸡肉汤（无盐无调料）"
+        ],
+        "forbidden": [
+          "生冷食物",
+          "难消化的干粮"
+        ],
+        "tips": "鼻塞时猫闻不到食物，加热湿粮可增加食欲。保证充足饮水。"
+      },
+      "care": "保持环境温暖湿润，可用加湿器。隔离病猫防止传染。每日清洁眼鼻分泌物。",
+      "vet_urgency": "推荐"
+    }
+  },
+  {
+    "id": "asthma",
+    "name": "猫哮喘",
+    "category": "respiratory",
+    "severity": "中度",
+    "description": "猫的慢性下呼吸道炎症，可由过敏原、灰尘、烟雾等触发。",
+    "symptoms": {
+      "coughing": 9,
+      "wheezing": 9,
+      "breathing_difficulty": 8,
+      "open_mouth_breathing": 7,
+      "lethargy": 4
+    },
+    "treatment": {
+      "medications": [
+        {
+          "name": "布地奈德吸入剂（AeroKat面罩）",
+          "dosage": "每日1-2次，遵医嘱",
+          "notes": "长期控制气道炎症"
+        },
+        {
+          "name": "沙丁胺醇吸入剂",
+          "dosage": "急性发作时使用",
+          "notes": "紧急扩张支气管"
+        },
+        {
+          "name": "泼尼松龙",
+          "dosage": "遵医嘱，逐步减量",
+          "notes": "严重时口服激素"
+        }
+      ],
+      "diet": {
+        "recommended": [
+          "低敏处方粮",
+          "富含Omega-3脂肪酸的食物",
+          "新鲜鱼油"
+        ],
+        "forbidden": [
+          "粉尘大的干粮",
+          "可能致敏的食物"
+        ],
+        "tips": "Omega-3有助于减轻气道炎症。避免使用敞口猫粮碗产生粉尘。"
+      },
+      "care": "避免烟雾、香水、粉尘等刺激物。使用无尘猫砂。保持空气清新。定期复查。",
+      "vet_urgency": "推荐"
+    }
+  },
+  {
+    "id": "gastroenteritis",
+    "name": "猫肠胃炎",
+    "category": "digestive",
+    "severity": "中度",
+    "description": "胃肠道炎症，可由饮食不当、感染、应激等引起。",
+    "symptoms": {
+      "vomiting": 9,
+      "diarrhea": 9,
+      "appetite_loss": 7,
+      "lethargy": 6,
+      "dehydration": 6,
+      "abdominal_pain": 5,
+      "fever": 4
+    },
+    "treatment": {
+      "medications": [
+        {
+          "name": "蒙脱石散",
+          "dosage": "每次1/4包，每日2-3次",
+          "notes": "止泻、保护肠道黏膜"
+        },
+        {
+          "name": "益生菌（猫用）",
+          "dosage": "按产品说明每日1次",
+          "notes": "恢复肠道菌群平衡"
+        },
+        {
+          "name": "马来酸氯苯那敏",
+          "dosage": "遵医嘱",
+          "notes": "严重时止吐，需兽医处方"
+        }
+      ],
+      "diet": {
+        "recommended": [
+          "少量多餐的温热湿粮",
+          "煮熟的鸡胸肉（无调料）",
+          "南瓜泥（纯天然）",
+          "肠道处方粮"
+        ],
+        "forbidden": [
+          "牛奶及乳制品",
+          "油腻食物",
+          "生肉",
+          "零食"
+        ],
+        "tips": "禁食12-24小时后，从少量易消化食物开始恢复。逐步过渡回正常饮食。"
+      },
+      "care": "确保充足饮水防脱水。严重脱水需皮下补液。注意观察大便性状变化。",
+      "vet_urgency": "推荐"
+    }
+  },
+  {
+    "id": "hairball",
+    "name": "毛球症",
+    "category": "digestive",
+    "severity": "轻度",
+    "description": "猫吞入过多毛发在胃中形成毛球，无法正常排出。",
+    "symptoms": {
+      "hairball_vomiting": 9,
+      "constipation": 6,
+      "appetite_loss": 4,
+      "eating_grass": 5,
+      "dull_coat": 3
+    },
+    "treatment": {
+      "medications": [
+        {
+          "name": "化毛膏",
+          "dosage": "每周2-3次，每次3-5cm",
+          "notes": "润滑肠道帮助毛球排出"
+        },
+        {
+          "name": "猫草",
+          "dosage": "自由取食",
+          "notes": "促进呕吐排出毛球"
+        }
+      ],
+      "diet": {
+        "recommended": [
+          "化毛球处方粮",
+          "富含纤维的食物",
+          "南瓜泥"
+        ],
+        "forbidden": [
+          "过多零食"
+        ],
+        "tips": "高纤维饮食有助于推动毛球通过消化道排出。"
+      },
+      "care": "定期梳毛（短毛猫每周1-2次，长毛猫每日1次）。保持规律运动。",
+      "vet_urgency": "建议"
+    }
+  },
+  {
+    "id": "flutd",
+    "name": "猫下泌尿道疾病(FLUTD)",
+    "category": "urinary",
+    "severity": "重度",
+    "description": "影响膀胱和尿道的一组疾病，公猫可能出现危及生命的尿道阻塞。",
+    "symptoms": {
+      "straining_to_urinate": 9,
+      "blood_in_urine": 8,
+      "frequent_urination": 8,
+      "crying_when_urinating": 8,
+      "urinating_outside_box": 7,
+      "no_urination": 10,
+      "restlessness": 5,
+      "excessive_vocalization": 5,
+      "lethargy": 4
+    },
+    "treatment": {
+      "medications": [
+        {
+          "name": "哌仑西平/解痉药",
+          "dosage": "遵医嘱",
+          "notes": "缓解尿道痉挛"
+        },
+        {
+          "name": "阿莫西林",
+          "dosage": "遵医嘱",
+          "notes": "如有细菌感染"
+        },
+        {
+          "name": "美洛昔康",
+          "dosage": "遵医嘱，短期使用",
+          "notes": "消炎镇痛"
+        }
+      ],
+      "diet": {
+        "recommended": [
+          "泌尿道处方粮（如c/d）",
+          "大量饮水（使用流动饮水机）",
+          "湿粮为主"
+        ],
+        "forbidden": [
+          "高矿物质食物",
+          "高镁食物",
+          "纯干粮饮食"
+        ],
+        "tips": "增加饮水量是预防复发的关键！使用宠物饮水机，多处放置水碗。湿粮含水量70%以上。"
+      },
+      "care": "保持猫砂盆清洁。减少应激。完全无法排尿属紧急情况，必须立即就医！",
+      "vet_urgency": "紧急"
+    }
+  },
+  {
+    "id": "ckd",
+    "name": "慢性肾病",
+    "category": "urinary",
+    "severity": "重度",
+    "description": "肾脏功能逐渐衰退的慢性疾病，多见于老年猫（7岁以上）。",
+    "symptoms": {
+      "excessive_thirst": 9,
+      "increased_urination": 9,
+      "weight_loss": 8,
+      "appetite_loss": 7,
+      "vomiting": 6,
+      "lethargy": 6,
+      "dehydration": 7,
+      "dull_coat": 4,
+      "bad_breath": 5
+    },
+    "treatment": {
+      "medications": [
+        {
+          "name": "贝那普利",
+          "dosage": "遵医嘱，每日1次",
+          "notes": "保护肾脏、降低蛋白尿"
+        },
+        {
+          "name": "磷结合剂",
+          "dosage": "随餐服用",
+          "notes": "控制血磷水平"
+        },
+        {
+          "name": "皮下补液",
+          "dosage": "遵医嘱，可能每日或隔日",
+          "notes": "维持水合状态"
+        }
+      ],
+      "diet": {
+        "recommended": [
+          "肾脏处方粮（低磷低蛋白）",
+          "优质蛋白来源",
+          "充足的新鲜水"
+        ],
+        "forbidden": [
+          "高磷食物（如内脏）",
+          "高蛋白食物",
+          "高盐食物"
+        ],
+        "tips": "肾脏处方粮是管理肾病的核心。保证充足饮水。"
+      },
+      "care": "定期检查肾功能指标。监测体重和饮水量。日常皮下补液可显著改善生活质量。",
+      "vet_urgency": "推荐"
+    }
+  },
+  {
+    "id": "ringworm",
+    "name": "猫癣（皮肤真菌感染）",
+    "category": "skin",
+    "severity": "中度",
+    "description": "由皮肤癣菌引起的真菌性皮肤病，可传染给人和其他动物。",
+    "symptoms": {
+      "ring_shaped_lesion": 10,
+      "hair_loss": 8,
+      "skin_lesions": 7,
+      "dandruff": 6,
+      "excessive_scratching": 5,
+      "skin_redness": 4
+    },
+    "treatment": {
+      "medications": [
+        {
+          "name": "伊曲康唑",
+          "dosage": "遵医嘱，5mg/kg，每日1次",
+          "notes": "口服抗真菌药，需兽医处方"
+        },
+        {
+          "name": "特比萘芬喷剂/药浴",
+          "dosage": "每日外用于患处",
+          "notes": "局部抗真菌治疗"
+        },
+        {
+          "name": "含氯己定的药浴液",
+          "dosage": "每周药浴1-2次",
+          "notes": "全身性治疗防止扩散"
+        }
+      ],
+      "diet": {
+        "recommended": [
+          "富含维生素E的食物",
+          "优质高蛋白猫粮",
+          "鱼油补充剂"
+        ],
+        "forbidden": [
+          "低质量猫粮"
+        ],
+        "tips": "营养均衡有助于增强免疫力，加速真菌清除。"
+      },
+      "care": "隔离病猫。每日消毒环境（1:10稀释漂白水）。戴手套接触病猫。疗程通常需6-8周。人也需注意个人防护。",
+      "vet_urgency": "推荐"
+    }
+  },
+  {
+    "id": "flea_dermatitis",
+    "name": "跳蚤过敏性皮炎",
+    "category": "skin",
+    "severity": "轻度",
+    "description": "对跳蚤唾液过敏引起的皮肤炎症，少量跳蚤即可导致严重反应。",
+    "symptoms": {
+      "excessive_scratching": 9,
+      "hair_loss": 7,
+      "skin_redness": 7,
+      "skin_lesions": 6,
+      "flea_dirt": 9,
+      "excessive_grooming": 7,
+      "restlessness": 4
+    },
+    "treatment": {
+      "medications": [
+        {
+          "name": "塞拉菌素（大宠爱）",
+          "dosage": "每月1次，按体重外用",
+          "notes": "体外驱虫，杀灭跳蚤"
+        },
+        {
+          "name": "泼尼松龙",
+          "dosage": "遵医嘱短期使用",
+          "notes": "缓解严重瘙痒炎症"
+        },
+        {
+          "name": "含燕麦的宠物香波",
+          "dosage": "每周药浴1次",
+          "notes": "舒缓皮肤瘙痒"
+        }
+      ],
+      "diet": {
+        "recommended": [
+          "含Omega-3/6脂肪酸的猫粮",
+          "鱼油补充剂",
+          "皮肤处方粮"
+        ],
+        "forbidden": [
+          "可能加重过敏的食物"
+        ],
+        "tips": "Omega脂肪酸有助于修复皮肤屏障和减轻炎症。"
+      },
+      "care": "全屋驱虫（喷雾+吸尘）。所有同居动物同时驱虫。坚持每月驱虫预防。勤洗猫窝用品。",
+      "vet_urgency": "建议"
+    }
+  },
+  {
+    "id": "conjunctivitis",
+    "name": "结膜炎",
+    "category": "eyes_ears",
+    "severity": "轻度",
+    "description": "眼结膜发炎，常由感染、异物或过敏引起。",
+    "symptoms": {
+      "eye_discharge": 9,
+      "eye_redness": 9,
+      "squinting": 7,
+      "swollen_eyes": 6,
+      "third_eyelid_visible": 5,
+      "lethargy": 3
+    },
+    "treatment": {
+      "medications": [
+        {
+          "name": "氧氟沙星眼药水（宠物用）",
+          "dosage": "每日3-4次，每次1-2滴",
+          "notes": "抗菌消炎"
+        },
+        {
+          "name": "红霉素眼膏",
+          "dosage": "每日2次涂于眼睑内",
+          "notes": "夜间用，持续抗菌"
+        }
+      ],
+      "diet": {
+        "recommended": [
+          "正常优质猫粮",
+          "适量鱼油"
+        ],
+        "forbidden": [],
+        "tips": "保持正常营养即可，无特殊饮食要求。"
+      },
+      "care": "每日用温热湿棉球轻轻擦拭眼周分泌物。不同眼使用不同棉球。防止猫抓挠（必要时戴项圈）。",
+      "vet_urgency": "建议"
+    }
+  },
+  {
+    "id": "ear_mites",
+    "name": "耳螨",
+    "category": "eyes_ears",
+    "severity": "轻度",
+    "description": "耳螨（耳疥虫）寄生引起的外耳道感染，接触传播，多见于幼猫。",
+    "symptoms": {
+      "ear_scratching": 9,
+      "ear_discharge": 9,
+      "head_shaking": 8,
+      "skin_redness": 5,
+      "restlessness": 4,
+      "hair_loss": 3
+    },
+    "treatment": {
+      "medications": [
+        {
+          "name": "耳净康滴耳液",
+          "dosage": "每耳3-5滴，每日1次，连用7-10天",
+          "notes": "杀灭耳螨"
+        },
+        {
+          "name": "塞拉菌素（大宠爱）",
+          "dosage": "按体重外用，间隔2周用2次",
+          "notes": "体内外驱虫"
+        }
+      ],
+      "diet": {
+        "recommended": [
+          "正常优质猫粮"
+        ],
+        "forbidden": [],
+        "tips": "无特殊饮食要求，保持正常营养。"
+      },
+      "care": "治疗前用专用洗耳液清洁耳道。所有同居动物同时治疗。清洗消毒猫窝用品。",
+      "vet_urgency": "建议"
+    }
+  },
+  {
+    "id": "fpv",
+    "name": "猫瘟（猫泛白细胞减少症）",
+    "category": "infectious",
+    "severity": "重度",
+    "description": "由猫细小病毒引起的急性高致死率传染病，幼猫死亡率极高。",
+    "symptoms": {
+      "vomiting": 9,
+      "diarrhea": 9,
+      "bloody_stool": 8,
+      "fever": 9,
+      "lethargy": 9,
+      "appetite_loss": 9,
+      "dehydration": 9,
+      "abdominal_pain": 7,
+      "hiding": 6
+    },
+    "treatment": {
+      "medications": [
+        {
+          "name": "猫瘟单抗/干扰素",
+          "dosage": "遵医嘱注射",
+          "notes": "抗病毒治疗，越早越好"
+        },
+        {
+          "name": "静脉补液",
+          "dosage": "住院治疗",
+          "notes": "纠正脱水和电解质紊乱"
+        },
+        {
+          "name": "止吐药（马罗皮坦）",
+          "dosage": "遵医嘱",
+          "notes": "控制呕吐"
+        },
+        {
+          "name": "广谱抗生素",
+          "dosage": "遵医嘱",
+          "notes": "预防继发细菌感染"
+        }
+      ],
+      "diet": {
+        "recommended": [
+          "恢复期少量多餐易消化食物",
+          "肠道处方粮",
+          "煮熟的鸡肉",
+          "电解质水"
+        ],
+        "forbidden": [
+          "任何难消化食物",
+          "牛奶",
+          "生肉"
+        ],
+        "tips": "呕吐期间禁食禁水。停止呕吐后从极少量水开始，逐步恢复喂食。"
+      },
+      "care": "必须住院治疗！严格隔离。环境彻底消毒。该病毒在环境中可存活1年以上。未接种疫苗的猫风险极高。",
+      "vet_urgency": "紧急"
+    }
+  },
+  {
+    "id": "ibd",
+    "name": "炎性肠病(IBD)",
+    "category": "digestive",
+    "severity": "中度",
+    "description": "慢性肠道炎症性疾病，常导致反复呕吐和腹泻。",
+    "symptoms": {
+      "vomiting": 8,
+      "diarrhea": 7,
+      "weight_loss": 7,
+      "appetite_loss": 5,
+      "lethargy": 4,
+      "dull_coat": 4,
+      "bloating": 4
+    },
+    "treatment": {
+      "medications": [
+        {
+          "name": "泼尼松龙",
+          "dosage": "遵医嘱，逐步减量",
+          "notes": "免疫抑制，控制炎症"
+        },
+        {
+          "name": "甲硝唑",
+          "dosage": "遵医嘱",
+          "notes": "抗炎+调节肠道菌群"
+        },
+        {
+          "name": "维生素B12注射",
+          "dosage": "遵医嘱，每周1次",
+          "notes": "IBD猫常缺乏B12"
+        }
+      ],
+      "diet": {
+        "recommended": [
+          "水解蛋白处方粮",
+          "新型蛋白（如鹿肉、兔肉）",
+          "高消化率食物"
+        ],
+        "forbidden": [
+          "常见过敏原（如牛肉、鱼）",
+          "含谷物食物",
+          "添加剂多的猫粮"
+        ],
+        "tips": "食物排除试验有助于找出致敏食物。单一蛋白来源饮食持续8-12周。"
+      },
+      "care": "减少生活应激。固定作息。定期复查。长期管理，不可擅自停药。",
+      "vet_urgency": "推荐"
+    }
+  },
+  {
+    "id": "hyperthyroidism",
+    "name": "甲状腺功能亢进",
+    "category": "endocrine",
+    "severity": "中度",
+    "description": "甲状腺激素分泌过多，多见于10岁以上老年猫。",
+    "symptoms": {
+      "weight_loss": 9,
+      "appetite_increase": 9,
+      "excessive_thirst": 6,
+      "increased_urination": 5,
+      "restlessness": 7,
+      "excessive_vocalization": 7,
+      "vomiting": 4,
+      "diarrhea": 4,
+      "dull_coat": 5
+    },
+    "treatment": {
+      "medications": [
+        {
+          "name": "甲巯咪唑",
+          "dosage": "遵医嘱，每日2次",
+          "notes": "抑制甲状腺激素合成，需定期监测"
+        },
+        {
+          "name": "碘131放射治疗",
+          "dosage": "一次性治疗",
+          "notes": "根治方案，需住院隔离"
+        }
+      ],
+      "diet": {
+        "recommended": [
+          "甲亢处方粮（限碘配方如y/d）",
+          "高质量蛋白"
+        ],
+        "forbidden": [
+          "高碘食物（如海鱼、海带）",
+          "含碘补充剂"
+        ],
+        "tips": "限碘饮食可辅助控制甲亢。严格避免含碘零食。"
+      },
+      "care": "定期复查甲状腺指标和肾功能。注意监测心率和体重。终身管理。",
+      "vet_urgency": "推荐"
+    }
+  },
+  {
+    "id": "diabetes",
+    "name": "猫糖尿病",
+    "category": "endocrine",
+    "severity": "重度",
+    "description": "胰岛素分泌不足或抵抗导致的代谢疾病。肥胖猫高发。",
+    "symptoms": {
+      "excessive_thirst": 9,
+      "increased_urination": 9,
+      "weight_loss": 8,
+      "appetite_increase": 7,
+      "lethargy": 5,
+      "weakness": 5,
+      "dull_coat": 4
+    },
+    "treatment": {
+      "medications": [
+        {
+          "name": "甘精胰岛素",
+          "dosage": "遵医嘱，皮下注射，每日2次",
+          "notes": "需血糖曲线调整剂量"
+        },
+        {
+          "name": "血糖监测仪",
+          "dosage": "定期家庭监测",
+          "notes": "建立血糖曲线"
+        }
+      ],
+      "diet": {
+        "recommended": [
+          "高蛋白低碳水猫粮",
+          "糖尿病处方粮（m/d）",
+          "湿粮为主"
+        ],
+        "forbidden": [
+          "高碳水食物",
+          "含谷物猫粮",
+          "零食和罐头鱼"
+        ],
+        "tips": "饮食控制是糖尿病管理的关键。高蛋白低碳水可减少胰岛素需求。定时定量喂食。"
+      },
+      "care": "严格定时喂食和注射胰岛素。监测饮水量和体重。学习识别低血糖症状。减肥可能实现缓解。",
+      "vet_urgency": "紧急"
+    }
+  },
+  {
+    "id": "dental_disease",
+    "name": "牙周病/口炎",
+    "category": "oral",
+    "severity": "中度",
+    "description": "牙龈炎症、牙结石及口腔溃疡，严重时影响进食。",
+    "symptoms": {
+      "bad_breath": 9,
+      "gum_redness": 9,
+      "difficulty_eating": 8,
+      "drooling": 7,
+      "gum_bleeding": 7,
+      "pawing_at_mouth": 6,
+      "appetite_loss": 6,
+      "tooth_discoloration": 7,
+      "oral_ulcers": 6,
+      "weight_loss": 4
+    },
+    "treatment": {
+      "medications": [
+        {
+          "name": "洁牙手术",
+          "dosage": "兽医院麻醉下操作",
+          "notes": "清除牙结石和感染牙齿"
+        },
+        {
+          "name": "克林霉素",
+          "dosage": "遵医嘱",
+          "notes": "口腔抗菌"
+        },
+        {
+          "name": "美洛昔康",
+          "dosage": "遵医嘱短期使用",
+          "notes": "消炎止痛"
+        }
+      ],
+      "diet": {
+        "recommended": [
+          "软质湿粮",
+          "洁齿处方粮（t/d）",
+          "温水泡软的干粮"
+        ],
+        "forbidden": [
+          "过硬的零食",
+          "骨头"
+        ],
+        "tips": "术后以软食为主。日常可用洁齿处方粮预防牙结石。"
+      },
+      "care": "定期检查口腔。术后按时用药。可尝试日常刷牙（用猫用牙膏）。",
+      "vet_urgency": "推荐"
+    }
+  },
+  {
+    "id": "pancreatitis",
+    "name": "猫胰腺炎",
+    "category": "digestive",
+    "severity": "重度",
+    "description": "胰腺炎症，急性可危及生命，慢性需长期管理。",
+    "symptoms": {
+      "appetite_loss": 9,
+      "lethargy": 8,
+      "vomiting": 7,
+      "abdominal_pain": 8,
+      "dehydration": 6,
+      "fever": 5,
+      "hiding": 6,
+      "diarrhea": 4
+    },
+    "treatment": {
+      "medications": [
+        {
+          "name": "马罗皮坦（止吐灵）",
+          "dosage": "遵医嘱",
+          "notes": "止吐，需兽医处方"
+        },
+        {
+          "name": "丁丙诺啡",
+          "dosage": "遵医嘱",
+          "notes": "镇痛"
+        },
+        {
+          "name": "静脉补液",
+          "dosage": "住院输液",
+          "notes": "维持水电解质平衡"
+        }
+      ],
+      "diet": {
+        "recommended": [
+          "少量多餐",
+          "低脂食物",
+          "消化道处方粮",
+          "煮熟的鸡胸肉"
+        ],
+        "forbidden": [
+          "高脂肪食物",
+          "油腻食物",
+          "难消化食物"
+        ],
+        "tips": "恢复期从极少量低脂食物开始。胰腺炎猫不建议长期禁食。"
+      },
+      "care": "急性期需住院治疗。注意疼痛管理。定期复查胰腺指标。管理合并症（如IBD、肝病）。",
+      "vet_urgency": "紧急"
+    }
+  },
+  {
+    "id": "roundworms",
+    "name": "蛔虫感染",
+    "category": "parasitic",
+    "severity": "轻度",
+    "description": "最常见的猫体内寄生虫，幼猫感染率高。",
+    "symptoms": {
+      "bloating": 8,
+      "diarrhea": 6,
+      "vomiting": 5,
+      "weight_loss": 5,
+      "dull_coat": 5,
+      "appetite_increase": 4,
+      "lethargy": 3
+    },
+    "treatment": {
+      "medications": [
+        {
+          "name": "吡喹酮+米尔贝肟（海乐妙/博来恩）",
+          "dosage": "按体重口服或外用，间隔2周用2次",
+          "notes": "广谱驱虫"
+        },
+        {
+          "name": "芬苯达唑",
+          "dosage": "遵医嘱，连用3-5天",
+          "notes": "针对蛔虫"
+        }
+      ],
+      "diet": {
+        "recommended": [
+          "高消化率猫粮",
+          "益生菌补充",
+          "适量南瓜泥"
+        ],
+        "forbidden": [
+          "生肉"
+        ],
+        "tips": "驱虫后1-2周可能在便便中看到虫体，属正常现象。"
+      },
+      "care": "每3个月定期驱虫。幼猫从2周龄开始每2周驱虫一次直到3月龄。勤清理猫砂盆。",
+      "vet_urgency": "建议"
+    }
+  },
+  {
+    "id": "food_allergy",
+    "name": "食物过敏性皮炎",
+    "category": "skin",
+    "severity": "轻度",
+    "description": "对食物中某种蛋白质过敏引起的皮肤和/或消化道症状。",
+    "symptoms": {
+      "excessive_scratching": 8,
+      "skin_redness": 7,
+      "hair_loss": 6,
+      "vomiting": 5,
+      "diarrhea": 5,
+      "excessive_grooming": 6,
+      "ear_scratching": 5,
+      "skin_lesions": 5
+    },
+    "treatment": {
+      "medications": [
+        {
+          "name": "食物排除试验",
+          "dosage": "持续8-12周",
+          "notes": "唯一确诊方法"
+        },
+        {
+          "name": "奥克拉替尼",
+          "dosage": "遵医嘱",
+          "notes": "短期控制瘙痒"
+        }
+      ],
+      "diet": {
+        "recommended": [
+          "水解蛋白处方粮",
+          "新型蛋白（鹿肉、兔肉、鸭肉）",
+          "单一蛋白来源食物"
+        ],
+        "forbidden": [
+          "已知过敏蛋白",
+          "零食",
+          "人类食物"
+        ],
+        "tips": "排除试验期间只能吃处方粮，不能吃任何其他食物和零食！"
+      },
+      "care": "记录饮食日记。逐一引入食物以确定过敏原。确定后终身避免。",
+      "vet_urgency": "建议"
+    }
+  },
+  {
+    "id": "hepatic_lipidosis",
+    "name": "肝脂沉积症（脂肪肝）",
+    "category": "endocrine",
+    "severity": "重度",
+    "description": "猫最常见的肝脏疾病。常因厌食超过3-7天触发，肥胖猫风险极高。",
+    "symptoms": {
+      "appetite_loss": 10,
+      "lethargy": 8,
+      "weight_loss": 8,
+      "vomiting": 6,
+      "dehydration": 6,
+      "hiding": 5,
+      "drooling": 4,
+      "dull_coat": 4
+    },
+    "treatment": {
+      "medications": [
+        {
+          "name": "食管饲管/鼻饲管",
+          "dosage": "兽医院安置",
+          "notes": "强制营养支持是核心治疗"
+        },
+        {
+          "name": "S-腺苷蛋氨酸（SAMe）",
+          "dosage": "遵医嘱",
+          "notes": "保肝护肝"
+        },
+        {
+          "name": "维生素B族",
+          "dosage": "遵医嘱补充",
+          "notes": "支持肝功能"
+        }
+      ],
+      "diet": {
+        "recommended": [
+          "高蛋白高热量食物",
+          "肝脏处方粮(l/d)",
+          "通过饲管少量多次喂食"
+        ],
+        "forbidden": [
+          "长时间禁食（超过24h即危险）"
+        ],
+        "tips": "恢复进食是治愈的关键。饲管喂食通常需要4-6周。逐步过渡到自主进食。"
+      },
+      "care": "绝不能让肥胖猫突然禁食或快速减肥！任何猫超过48小时不吃东西必须就医。饲管护理需要学习。",
+      "vet_urgency": "紧急"
+    }
+  },
+  {
+    "id": "cystitis",
+    "name": "特发性膀胱炎(FIC)",
+    "category": "urinary",
+    "severity": "中度",
+    "description": "非感染性膀胱炎症，与应激密切相关，反复发作。",
+    "symptoms": {
+      "frequent_urination": 8,
+      "blood_in_urine": 8,
+      "straining_to_urinate": 7,
+      "crying_when_urinating": 7,
+      "urinating_outside_box": 7,
+      "restlessness": 5,
+      "excessive_grooming": 4
+    },
+    "treatment": {
+      "medications": [
+        {
+          "name": "GAG补充剂",
+          "dosage": "遵医嘱，每日口服",
+          "notes": "修复膀胱黏膜保护层"
+        },
+        {
+          "name": "费利威（Feliway）扩散器",
+          "dosage": "持续使用",
+          "notes": "猫面部信息素，减轻应激"
+        }
+      ],
+      "diet": {
+        "recommended": [
+          "泌尿道处方湿粮",
+          "大量增加饮水",
+          "可加少量鸡汤调味水"
+        ],
+        "forbidden": [
+          "高矿物质干粮",
+          "纯干粮",
+          "高镁食物"
+        ],
+        "tips": "增加饮水量是最重要的管理措施。湿粮+饮水机+多处水碗。"
+      },
+      "care": "减少环境应激。增加猫砂盆数量（猫数+1）。提供垂直空间和躲藏处。保持生活规律。",
+      "vet_urgency": "推荐"
+    }
+  },
+  {
+    "id": "otitis_media",
+    "name": "中耳炎",
+    "category": "eyes_ears",
+    "severity": "中度",
+    "description": "中耳的感染性炎症，可能由外耳炎未及时治疗蔓延引起。",
+    "symptoms": {
+      "ear_scratching": 8,
+      "head_shaking": 8,
+      "head_tilt": 9,
+      "ear_discharge": 7,
+      "loss_of_balance": 7,
+      "fever": 4,
+      "appetite_loss": 4
+    },
+    "treatment": {
+      "medications": [
+        {
+          "name": "全身抗生素（克拉维酸阿莫西林）",
+          "dosage": "遵医嘱，疗程2-4周",
+          "notes": "需兽医处方"
+        },
+        {
+          "name": "耳道清洗液",
+          "dosage": "遵医嘱定期清洁",
+          "notes": "保持耳道清洁"
+        }
+      ],
+      "diet": {
+        "recommended": [
+          "正常优质猫粮",
+          "适量鱼油增强免疫"
+        ],
+        "forbidden": [],
+        "tips": "无特殊饮食要求。"
+      },
+      "care": "按时完成全疗程用药。定期复查。治疗外耳炎以防蔓延。注意猫的平衡状态。",
+      "vet_urgency": "推荐"
+    }
+  },
+  {
+    "id": "pneumonia",
+    "name": "猫肺炎",
+    "category": "respiratory",
+    "severity": "重度",
+    "description": "肺部感染性炎症，可由细菌、病毒或真菌引起，严重可致命。",
+    "symptoms": {
+      "breathing_difficulty": 9,
+      "coughing": 8,
+      "fever": 8,
+      "lethargy": 8,
+      "appetite_loss": 7,
+      "nasal_discharge": 6,
+      "open_mouth_breathing": 7,
+      "wheezing": 6
+    },
+    "treatment": {
+      "medications": [
+        {
+          "name": "广谱抗生素（多西环素）",
+          "dosage": "遵医嘱，5mg/kg，每日2次",
+          "notes": "针对细菌感染"
+        },
+        {
+          "name": "雾化治疗",
+          "dosage": "每日2-3次",
+          "notes": "缓解呼吸道症状"
+        },
+        {
+          "name": "支气管扩张剂",
+          "dosage": "遵医嘱",
+          "notes": "改善呼吸"
+        }
+      ],
+      "diet": {
+        "recommended": [
+          "高热量易消化湿粮",
+          "温热食物",
+          "鸡肉汤"
+        ],
+        "forbidden": [
+          "冷食",
+          "难消化食物"
+        ],
+        "tips": "保证营养摄入。食欲差时可用注射器辅助喂食。"
+      },
+      "care": "保持温暖安静环境。严重者需住院氧疗。监测呼吸频率。完成全疗程抗生素治疗。",
+      "vet_urgency": "紧急"
+    }
+  },
+  {
+    "id": "arthritis",
+    "name": "骨关节炎",
+    "category": "musculoskeletal",
+    "severity": "中度",
+    "description": "关节退行性疾病，常见于老年猫，猫善于隐藏疼痛。",
+    "symptoms": {
+      "reluctance_to_jump": 9,
+      "stiffness": 8,
+      "limping": 7,
+      "lethargy": 5,
+      "aggression": 5,
+      "excessive_vocalization": 4,
+      "appetite_loss": 3
+    },
+    "treatment": {
+      "medications": [
+        {
+          "name": "美洛昔康",
+          "dosage": "遵医嘱，最低有效剂量",
+          "notes": "消炎止痛，需监测肾功能"
+        },
+        {
+          "name": "关节保健品（葡萄糖胺+硫酸软骨素）",
+          "dosage": "按产品说明每日1次",
+          "notes": "保护关节软骨"
+        },
+        {
+          "name": "Solensia（抗NGF单抗）",
+          "dosage": "每月皮下注射1次",
+          "notes": "新型猫骨关节炎止痛药"
+        }
+      ],
+      "diet": {
+        "recommended": [
+          "关节处方粮(j/d)",
+          "含Omega-3的食物",
+          "适量控制体重的饮食"
+        ],
+        "forbidden": [
+          "高热量食物（避免肥胖加重负担）"
+        ],
+        "tips": "控制体重是关节炎管理的重要一环。适度活动。"
+      },
+      "care": "提供低矮的猫窝和猫砂盆。使用楼梯/坡道辅助猫到达高处。保暖有助于缓解僵硬。",
+      "vet_urgency": "推荐"
+    }
+  },
+  {
+    "id": "felv",
+    "name": "猫白血病(FeLV)",
+    "category": "infectious",
+    "severity": "重度",
+    "description": "猫白血病病毒引起的严重传染病，破坏免疫系统，可导致淋巴瘤等肿瘤。",
+    "symptoms": {
+      "weight_loss": 8,
+      "appetite_loss": 7,
+      "fever": 7,
+      "lethargy": 8,
+      "dull_coat": 6,
+      "gum_redness": 5,
+      "diarrhea": 5,
+      "eye_redness": 4,
+      "weakness": 7,
+      "lumps_bumps": 5
+    },
+    "treatment": {
+      "medications": [
+        {
+          "name": "猫干扰素omega",
+          "dosage": "遵医嘱",
+          "notes": "抗病毒、增强免疫"
+        },
+        {
+          "name": "对症治疗",
+          "dosage": "视具体症状而定",
+          "notes": "治疗继发感染和肿瘤"
+        }
+      ],
+      "diet": {
+        "recommended": [
+          "高品质高蛋白猫粮",
+          "熟食（避免生食）",
+          "免疫支持营养补充"
+        ],
+        "forbidden": [
+          "生肉（感染风险）",
+          "低质量食物"
+        ],
+        "tips": "良好营养有助于维持免疫功能。只吃熟食。"
+      },
+      "care": "严格室内饲养。隔离避免传染给其他猫。定期体检（每半年一次）。接种疫苗可有效预防。",
+      "vet_urgency": "紧急"
+    }
+  }
+]
