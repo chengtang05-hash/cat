@@ -26,6 +26,7 @@ class DiagnosisResult:
     matched_symptoms: list[str] = field(default_factory=list)  # 匹配到的症状ID
     unmatched_symptoms: list[str] = field(default_factory=list)  # 疾病有但用户没报告的症状
     treatment: dict = field(default_factory=dict)
+    breed_advice: list[str] = field(default_factory=list)  # 品种专属建议
 
     def to_dict(self) -> dict:
         """转换为字典用于JSON序列化。"""
@@ -39,6 +40,7 @@ class DiagnosisResult:
             "matched_symptoms": self.matched_symptoms,
             "unmatched_symptoms": self.unmatched_symptoms,
             "treatment": self.treatment,
+            "breed_advice": self.breed_advice,
         }
 
 
@@ -54,6 +56,7 @@ class DiagnosisEngine:
         """初始化引擎，加载知识库数据。"""
         self.diseases: list[dict] = []
         self.symptoms_map: dict[str, str] = {}  # id -> name 映射
+        self.breeds: dict[str, dict] = {}  # breed_id -> breed_info
         self._load_data()
 
     def _load_data(self):
@@ -71,13 +74,27 @@ class DiagnosisEngine:
                 for symptom in category["symptoms"]:
                     self.symptoms_map[symptom["id"]] = symptom["name"]
 
+        # 加载品种数据
+        breeds_file = DATA_DIR / "breeds.json"
+        if breeds_file.exists():
+            with open(breeds_file, "r", encoding="utf-8") as f:
+                self.breeds = json.load(f)
+
     def get_symptom_name(self, symptom_id: str) -> str:
         """获取症状的中文名称。"""
         return self.symptoms_map.get(symptom_id, symptom_id)
 
+    def get_breeds(self) -> list[dict]:
+        """获取所有品种列表（用于前端选择）。"""
+        return [
+            {"id": bid, "name": info["name"]}
+            for bid, info in self.breeds.items()
+        ]
+
     def diagnose(
         self,
         symptoms: list[str],
+        breed_id: str = None,
         min_score: float = 15.0,
         max_results: int = 8,
     ) -> list[DiagnosisResult]:
@@ -86,6 +103,7 @@ class DiagnosisEngine:
 
         Args:
             symptoms: 用户选择的症状ID列表
+            breed_id: 猫咪品种ID
             min_score: 最低匹配度阈值（百分比）
             max_results: 最大返回结果数
 
@@ -106,6 +124,16 @@ class DiagnosisEngine:
             # 计算加权匹配度
             score = self._calculate_match_score(input_set, disease_symptoms)
 
+            # 品种易感性加权
+            breed_info = self.breeds.get(breed_id, {}) if breed_id else {}
+            predispositions = breed_info.get("predispositions", [])
+            bonus_advice = []
+            
+            if disease["id"] in predispositions:
+                # 如果是该品种易感疾病，给予额外加分
+                score += 10.0
+                bonus_advice = breed_info.get("special_care", [])
+
             if score >= min_score:
                 # 找出匹配和未匹配的症状
                 matched = [s for s in symptoms if s in disease_symptoms]
@@ -121,6 +149,7 @@ class DiagnosisEngine:
                     matched_symptoms=matched,
                     unmatched_symptoms=unmatched,
                     treatment=disease.get("treatment", {}),
+                    breed_advice=bonus_advice
                 )
                 results.append(result)
 

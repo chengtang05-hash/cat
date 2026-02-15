@@ -33,6 +33,7 @@ app.mount("/static", StaticFiles(directory=str(BASE_DIR / "static")), name="stat
 class DiagnoseRequest(BaseModel):
     """诊断请求模型。"""
     symptoms: list[str]  # 症状ID列表
+    breed_id: str | None = None  # 品种ID（可选）
     cat_age: str | None = None  # 猫的年龄段（可选）
     cat_weight: float | None = None  # 猫的体重kg（可选）
 
@@ -49,15 +50,21 @@ async def get_symptoms():
     return engine.get_all_symptoms()
 
 
+@app.get("/api/breeds")
+async def get_breeds():
+    """获取所有支持的猫咪品种。"""
+    return engine.get_breeds()
+
+
 @app.post("/api/diagnose")
 async def diagnose(request: DiagnoseRequest):
     """
     根据症状进行诊断。
 
-    接收症状列表，返回按匹配度排序的诊断结果，
-    每个结果包含疾病信息和完整治疗方案。
+    接收症状列表和品种，返回按匹配度排序的诊断结果，
+    每个结果包含疾病信息、完整治疗方案及品种特定建议。
     """
-    results = engine.diagnose(request.symptoms)
+    results = engine.diagnose(request.symptoms, breed_id=request.breed_id)
 
     # 将症状ID转换为中文名称
     symptom_names = {sid: engine.get_symptom_name(sid) for sid in request.symptoms}

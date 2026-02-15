@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,11 @@
     <meta name="description" content="根据猫的症状体征智能诊断可能的疾病，并提供药物治疗和饮食调养方案">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/static/style.css">
 </head>
+
 <body>
     <!-- 背景装饰 -->
     <div class="bg-decoration">
@@ -73,6 +76,12 @@
             <!-- 附加信息 -->
             <div class="extra-info">
                 <div class="info-field">
+                    <label for="cat-breed">猫咪品种</label>
+                    <select id="cat-breed">
+                        <option value="">正在加载...</option>
+                    </select>
+                </div>
+                <div class="info-field">
                     <label for="cat-age">猫咪年龄段</label>
                     <select id="cat-age">
                         <option value="">可选</option>
@@ -117,4 +126,5 @@
 
     <script src="/static/app.js"></script>
 </body>
+
 </html>

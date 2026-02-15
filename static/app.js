@@ -12,8 +12,25 @@ const state = {
 // === 初始化 ===
 document.addEventListener('DOMContentLoaded', () => {
     loadSymptoms();
+    loadBreeds();
     document.getElementById('symptom-search').addEventListener('input', filterSymptoms);
 });
+
+// 加载品种数据
+async function loadBreeds() {
+    try {
+        const res = await fetch('/api/breeds');
+        const breeds = await res.json();
+        const select = document.getElementById('cat-breed');
+        select.innerHTML = breeds.map(b =>
+            `<option value="${b.id}">${b.name}</option>`
+        ).join('');
+        // 默认选中通用/普通猫 (假设它是列表第一个或特定ID，这里默认让后端顺序决定)
+    } catch (err) {
+        console.error('加载品种失败', err);
+        document.getElementById('cat-breed').innerHTML = '<option value="">加载失败</option>';
+    }
+}
 
 // 加载症状数据
 async function loadSymptoms() {
@@ -110,6 +127,7 @@ async function runDiagnosis() {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
                 symptoms: Array.from(state.selected),
+                breed_id: document.getElementById('cat-breed').value || null,
                 cat_age: document.getElementById('cat-age').value || null,
                 cat_weight: parseFloat(document.getElementById('cat-weight').value) || null,
             }),
@@ -148,6 +166,7 @@ function setStep(active) {
     }
 }
 
+// === 结果渲染 ===
 // === 结果渲染 ===
 function renderResults(data) {
     const container = document.getElementById('results-container');
@@ -206,6 +225,14 @@ function renderResults(data) {
                         </div>` : ''}
                     </div>
 
+                    ${r.breed_advice && r.breed_advice.length > 0 ? `
+                    <div class="detail-section" style="background-color: #fff8e1; border-color: #ffe082;">
+                        <h4 style="color: #f57f17;">🐱 品种专属建议</h4>
+                        <ul style="margin: 0; padding-left: 20px; color: #5d4037;">
+                            ${r.breed_advice.map(advice => `<li>${advice}</li>`).join('')}
+                        </ul>
+                    </div>` : ''}
+
                     <div class="detail-section">
                         <h4>💊 药物治疗</h4>
                         ${r.treatment.medications.map(m => `
@@ -262,6 +289,6 @@ function getName(id) {
 
 // 展开/收起卡片
 function toggleCard(index) {
-    const card = document.getElementById(`card-${index}`);
+    const card = document.getElementById(`card - ${index}`);
     card.classList.toggle('expanded');
 }

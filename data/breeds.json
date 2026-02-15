@@ -1,0 +1,279 @@
+{
+    "general": {
+        "name": "通用/中华田园猫 (不区分品种)",
+        "description": "适用于大多数混血猫或不确定品种的猫咪。",
+        "predispositions": [],
+        "special_care": [
+            "定期疫苗接种和驱虫是基础。",
+            "无论品种如何，适龄绝育有助于延长寿命并减少行为问题。"
+        ]
+    },
+    "jianzhou": {
+        "name": "简州猫 (Jianzhou Cat)",
+        "description": "四川简阳特有品种，不仅抓老鼠厉害，而且耳朵有'四耳'特征（耳内有附耳）。身体强壮，但容易发胖。",
+        "predispositions": [
+            "obesity",
+            "ear_mites"
+        ],
+        "special_care": [
+            "耳朵护理：由于独特的耳部褶皱结构（四耳），耳道容易积聚污垢，建议每周检查并清洁耳朵，预防耳螨。",
+            "体重管理：简州猫属于易胖体质，请务必控制饮食量，避免自助餐式喂养，多陪玩增加运动量。"
+        ]
+    },
+    "dragon_li": {
+        "name": "狸花猫 (Dragon Li)",
+        "description": "中国本土自然品种，身体强壮，动作敏捷，捕猎能力极强。",
+        "predispositions": [
+            "obesity",
+            "parasitic"
+        ],
+        "special_care": [
+            "运动需求：精力非常旺盛，需要较大的活动空间和玩具。",
+            "防走失：好奇心强且身手矫健，务必封好门窗。"
+        ]
+    },
+    "british_shorthair": {
+        "name": "英国短毛猫 (British Shorthair)",
+        "description": "体型圆胖，性格温顺，安静。",
+        "predispositions": [
+            "obesity",
+            "hcm",
+            "pkd",
+            "gingivitis"
+        ],
+        "special_care": [
+            "体重控制：非常容易发福，需严格控制热量摄入，防止关节负担。",
+            "心脏筛查：存在肥厚性心肌病(HCM)风险，建议每年体检关注心脏。",
+            "血型注意：英短B型血比例较高，配种需注意溶血风险。"
+        ]
+    },
+    "american_shorthair": {
+        "name": "美国短毛猫 (American Shorthair)",
+        "description": "性格活泼，身体健康，花纹美丽。",
+        "predispositions": [
+            "obesity",
+            "hcm"
+        ],
+        "special_care": [
+            "体重管理：也是易胖品种，注意饮食控制。",
+            "活跃度：需要适量运动消耗精力。"
+        ]
+    },
+    "ragdoll": {
+        "name": "布偶猫 (Ragdoll)",
+        "description": "体型大，长毛，性格像狗一样粘人，痛感较迟钝。",
+        "predispositions": [
+            "hcm",
+            "pkd",
+            "hairball",
+            "urinary"
+        ],
+        "special_care": [
+            "毛发梳理：长毛容易打结，且易有毛球症，需每日梳毛。",
+            "心脏健康：重点关注HCM（肥厚性心肌病），建议定期的心脏超声。",
+            "室内饲养：缺乏野外生存能力和防卫意识，严禁散养。"
+        ]
+    },
+    "exotic_shorthair": {
+        "name": "异国短毛猫/加菲猫 (Exotic Shorthair)",
+        "description": "短鼻，大眼，性格安静甜美。",
+        "predispositions": [
+            "respiratory",
+            "eye_discharge",
+            "pkd",
+            "dental_disease"
+        ],
+        "special_care": [
+            "面部清洁：由于鼻泪管短，极易产生泪痕和眼部分泌物，需每日擦拭眼睛和面部褶皱。",
+            "呼吸道：短鼻导致呼吸道狭窄，避免剧烈运动和过热环境。",
+            "进食障碍：扁脸可能导致进食困难，建议使用扁平的盘子。"
+        ]
+    },
+    "persian": {
+        "name": "波斯猫 (Persian)",
+        "description": "长毛，优雅，扁脸。",
+        "predispositions": [
+            "pkd",
+            "respiratory",
+            "eye_discharge",
+            "hairball",
+            "ringworm"
+        ],
+        "special_care": [
+            "毛发护理：极易打结，必须每日仔细梳理，定期洗护。",
+            "眼部护理：每日清洁泪痕。",
+            "多囊肾筛查：PKD是波斯猫常见遗传病，建议进行基因检测或B超筛查。"
+        ]
+    },
+    "siamese": {
+        "name": "暹罗猫 (Siamese)",
+        "description": "重点色，性格外向，叫声大，粘人。",
+        "predispositions": [
+            "dental_disease",
+            "respiratory",
+            "obsessive_compulsive"
+        ],
+        "special_care": [
+            "口腔卫生：容易患牙结石和牙龈炎，建议从小养成刷牙习惯。",
+            "情感需求：非常需要陪伴，独处容易产生分离焦虑或强迫行为（如过度舔毛）。",
+            "保暖：体脂率低，怕冷。"
+        ]
+    },
+    "scottish_fold": {
+        "name": "苏格兰折耳猫 (Scottish Fold)",
+        "description": "耳朵向前折叠，性格甜美。",
+        "predispositions": [
+            "osteochondrodysplasia",
+            "hcm",
+            "pkd",
+            "arthritis"
+        ],
+        "special_care": [
+            "**骨骼健康（极重要）**：所有折耳猫都携带软骨骨营养不良基因，可能导致严重的关节疼痛和行动障碍。一旦发现跛行、不愿跳跃，立即就医。",
+            "软骨保护剂：建议在这个品种的饮食中补充软骨素/葡萄糖胺（遵医嘱）。",
+            "定期体检：重点关注骨骼X光和心脏健康。"
+        ]
+    },
+    "maine_coon": {
+        "name": "缅因猫 (Maine Coon)",
+        "description": "巨大的长毛猫，性格温柔。",
+        "predispositions": [
+            "hcm",
+            "hip_dysplasia",
+            "sma",
+            "pkd"
+        ],
+        "special_care": [
+            "关节筛查：体型巨大给关节带来压力，易患髋关节发育不良。",
+            "心脏健康：HCM高发品种，定期心脏检查。",
+            "毛发：虽不易打结，但仍需定期梳理。"
+        ]
+    },
+    "sphynx": {
+        "name": "斯芬克斯无毛猫 (Sphynx)",
+        "description": "无毛，皱纹多，皮肤像水蜜桃。",
+        "predispositions": [
+            "hcm",
+            "skin_disease",
+            "ear_mites"
+        ],
+        "special_care": [
+            "皮肤清洁：皮肤出油多，需定期洗澡或擦拭，否则容易患皮肤病。",
+            "体温调节：既怕冷又怕晒，冬天需穿衣保暖，夏天需防晒。",
+            "耳部护理：耳垢分泌较多，需频繁清洁。"
+        ]
+    },
+    "bengal": {
+        "name": "孟加拉豹猫 (Bengal)",
+        "description": "具有野生豹纹，精力极其旺盛。",
+        "predispositions": [
+            "hcm",
+            "pra",
+            "pk_def"
+        ],
+        "special_care": [
+            "高运动量：必须有足够的垂直空间和运动机会，否则可能产生破坏行为。",
+            "视力：注意遗传性视网膜萎缩(PRA)风险。"
+        ]
+    },
+    "russian_blue": {
+        "name": "俄罗斯蓝猫 (Russian Blue)",
+        "description": "蓝灰色短毛，羞涩内向。",
+        "predispositions": [
+            "obesity",
+            "urinary"
+        ],
+        "special_care": [
+            "体重控制：贪吃且不爱动，容易发胖。",
+            "泌尿系统：注意饮水量，预防结石。"
+        ]
+    },
+    "devon_rex": {
+        "name": "德文卷毛猫 (Devon Rex)",
+        "description": "卷毛，精灵耳，性格像狗。",
+        "predispositions": [
+            "patellar_luxation",
+            "cms",
+            "hcm"
+        ],
+        "special_care": [
+            "皮肤护理：毛发少且卷，容易堆积油脂，需定期清洁耳部和皮肤。",
+            "关节：注意髌骨脱位风险。"
+        ]
+    },
+    "abyssinian": {
+        "name": "阿比西尼亚猫 (Abyssinian)",
+        "description": "古老品种，毛色像野兔，非常活跃。",
+        "predispositions": [
+            "dental_disease",
+            "pk_def",
+            "renal_amyloidosis"
+        ],
+        "special_care": [
+            "口腔健康：极易患牙周病，刷牙至关重要。",
+            "肾脏健康：留意遗传性肾脏淀粉样变性风险。"
+        ]
+    },
+    "norwegian_forest": {
+        "name": "挪威森林猫 (Norwegian Forest Cat)",
+        "description": "北欧长毛猫，适应寒冷。",
+        "predispositions": [
+            "hcm",
+            "gsd4",
+            "hip_dysplasia"
+        ],
+        "special_care": [
+            "毛发：需定期梳理防止打结。",
+            "心脏与糖原贮积病：注意相关遗传病筛查。"
+        ]
+    },
+    "birman": {
+        "name": "伯曼猫 (Birman)",
+        "description": "长毛，重点色，白手套。",
+        "predispositions": [
+            "kidney_disease",
+            "hcm"
+        ],
+        "special_care": [
+            "肾脏健康：血液肌酐水平可能确实比普通猫稍高，但仍需监测肾功能。",
+            "毛发：丝状毛发不易打结，但仍需打理。"
+        ]
+    },
+    "shandong_lion": {
+        "name": "山东狮子猫 (Shandong Lion Cat)",
+        "description": "中国传统长毛与白猫，尤其是异瞳白猫。",
+        "predispositions": [
+            "deafness",
+            "hairball"
+        ],
+        "special_care": [
+            "听力障碍：蓝眼白猫常伴有先天性耳聋，饲养时需注意沟通方式（使用手势）和安全。",
+            "毛发护理：长毛需每日梳理。"
+        ]
+    },
+    "bombay": {
+        "name": "孟买猫 (Bombay)",
+        "description": "全黑，像小黑豹。",
+        "predispositions": [
+            "respiratory",
+            "obesity",
+            "craniofacial_defect"
+        ],
+        "special_care": [
+            "呼吸道：可能有类似缅甸猫的颅面缺陷或呼吸道问题。",
+            "体重：贪吃易胖。"
+        ]
+    },
+    "chinchilla": {
+        "name": "金吉拉 (Chinchilla)",
+        "description": "波斯猫的一种，银色长毛，绿眼。",
+        "predispositions": [
+            "pkd",
+            "tear_staining",
+            "hairball"
+        ],
+        "special_care": [
+            "参照波斯猫护理：重点是多囊肾筛查、眼部泪痕清洁和毛发梳理。"
+        ]
+    }
+}

@@ -1135,5 +1135,178 @@
       "care": "严格室内饲养。隔离避免传染给其他猫。定期体检（每半年一次）。接种疫苗可有效预防。",
       "vet_urgency": "紧急"
     }
+  },
+  {
+    "id": "obesity",
+    "name": "肥胖症",
+    "category": "general",
+    "severity": "中度",
+    "description": "体重超过理想体重20%以上。肥胖是许多严重疾病（如糖尿病、关节炎、脂肪肝）的诱因。",
+    "symptoms": {
+      "weight_gain": 10,
+      "appetite_increase": 7,
+      "lethargy": 6,
+      "difficulty_grooming": 5,
+      "shortness_of_breath": 5
+    },
+    "treatment": {
+      "medications": [
+        {
+          "name": "减肥处方粮",
+          "dosage": "严格按目标体重喂食",
+          "notes": "控制热量是核心"
+        }
+      ],
+      "diet": {
+        "recommended": [
+          "高蛋白低脂肪湿粮",
+          "高纤维食物（增加饱腹感）"
+        ],
+        "forbidden": [
+          "自助餐式喂食",
+          "高碳水干粮",
+          "零食"
+        ],
+        "tips": "计算每日所需热量。使用漏食球增加进食难度。杜绝乞食行为。"
+      },
+      "care": "每日陪玩互动至少15-20分钟。定期称重（每周一次）。",
+      "vet_urgency": "建议"
+    }
+  },
+  {
+    "id": "hcm",
+    "name": "肥厚性心肌病(HCM)",
+    "category": "cardiovascular",
+    "severity": "重度",
+    "description": "最常见的猫心脏病，心肌增厚导致心室舒张功能受损。布偶、缅因、英短等品种高发。",
+    "symptoms": {
+      "breathing_difficulty": 8,
+      "lethargy": 7,
+      "open_mouth_breathing": 8,
+      "fainting": 6,
+      "paralysis": 9,
+      "loss_of_balance": 5
+    },
+    "treatment": {
+      "medications": [
+        {
+          "name": "呋塞米（利尿剂）",
+          "dosage": "遵医嘱",
+          "notes": "缓解肺水肿/胸水"
+        },
+        {
+          "name": "β受体阻滞剂/钙通道阻滞剂",
+          "dosage": "遵医嘱",
+          "notes": "控制心率，改善舒张"
+        },
+        {
+          "name": "氯吡格雷",
+          "dosage": "遵医嘱",
+          "notes": "预防血栓（动脉血栓风险）"
+        }
+      ],
+      "diet": {
+        "recommended": [
+          "低钠食物",
+          "富含牛磺酸的食物",
+          "Omega-3补充"
+        ],
+        "forbidden": [
+          "高盐食物"
+        ],
+        "tips": "限制钠摄入以减轻心脏负担。"
+      },
+      "care": "避免剧烈运动和应激。注意观察呼吸频率（静息呼吸>30次/分需警惕）。定期心脏超声检查。",
+      "vet_urgency": "紧急"
+    }
+  },
+  {
+    "id": "pkd",
+    "name": "多囊肾(PKD)",
+    "category": "urinary",
+    "severity": "重度",
+    "description": "遗传性肾脏疾病，肾脏出现充满液体的囊肿，导致肾功能衰竭。波斯系猫高发。",
+    "symptoms": {
+      "increased_urination": 8,
+      "excessive_thirst": 8,
+      "weight_loss": 7,
+      "vomiting": 6,
+      "lethargy": 6,
+      "appetite_loss": 6,
+      "bad_breath": 5
+    },
+    "treatment": {
+      "medications": [
+        {
+          "name": "支持性疗法",
+          "dosage": "同慢性肾病(CKD)",
+          "notes": "目前无治愈方法，仅能延缓进程"
+        },
+        {
+          "name": "磷结合剂",
+          "dosage": "随餐服用",
+          "notes": "控制血磷"
+        }
+      ],
+      "diet": {
+        "recommended": [
+          "肾脏处方粮（早期开始）",
+          "充足饮水"
+        ],
+        "forbidden": [
+          "高蛋白高磷食物"
+        ],
+        "tips": "管理原则与慢性肾病相同。"
+      },
+      "care": "基因检测确诊。定期B超监测囊肿发展。维持良好水合状态。",
+      "vet_urgency": "建议"
+    }
+  },
+  {
+    "id": "osteochondrodysplasia",
+    "name": "软骨骨营养不良",
+    "category": "musculoskeletal",
+    "severity": "重度",
+    "description": "苏格兰折耳猫特有的遗传病，导致全身软骨和骨骼发育异常，极其痛苦。",
+    "symptoms": {
+      "limping": 9,
+      "stiffness": 9,
+      "reluctance_to_jump": 9,
+      "short_tail": 8,
+      "swollen_joints": 8,
+      "lameness": 8,
+      "inactivity": 7
+    },
+    "treatment": {
+      "medications": [
+        {
+          "name": "止痛药（美洛昔康/加巴喷丁）",
+          "dosage": "遵医嘱长期管理",
+          "notes": "缓解慢性疼痛"
+        },
+        {
+          "name": "软骨保护剂",
+          "dosage": "每日",
+          "notes": "可能延缓关节退化"
+        },
+        {
+          "name": "Solensia",
+          "dosage": "每月注射",
+          "notes": "控制骨关节炎疼痛"
+        }
+      ],
+      "diet": {
+        "recommended": [
+          "关节处方粮",
+          "Omega-3脂肪酸"
+        ],
+        "forbidden": [
+          "导致肥胖的饮食"
+        ],
+        "tips": "控制体重能显著减轻关节负担。"
+      },
+      "care": "铺设柔软地垫。避免高处跳跃。终身疼痛管理。不建议繁殖。",
+      "vet_urgency": "推荐"
+    }
   }
 ]
